@@ -1,0 +1,8 @@
+name: StaffUtils
+version: '${version}'
+
+main: me.simonevtw.staffUtils.Main
+api-version: '1.21.8'
+load: POSTWORLD
+
+authors: [ simonevtw ]
