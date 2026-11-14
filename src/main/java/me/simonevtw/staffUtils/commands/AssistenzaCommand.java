@@ -28,6 +28,10 @@ public class AssistenzaCommand {
                                 return 0;
                             }
 
+                            if(!(sender.hasPermission("horizons.assistenza.convoca"))) {
+                                sender.sendRichMessage("<red>Permessi insufficienti.");
+                            }
+
                             var resolver = context.getArgument("target", PlayerSelectorArgumentResolver.class);
                             var resolvedPlayers = resolver.resolve(source);
                             if (resolvedPlayers.isEmpty()) {
